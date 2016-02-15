@@ -1,0 +1,35 @@
+import java.lang.*;
+import java.io.*;
+
+public class Field {
+	String name;
+	String type;
+	String value;
+	
+	Field()
+	{
+		
+	}
+	Field(String pname, String ptype, String pvalue)
+	{
+		name = pname;
+		type = ptype;
+		value = pvalue;
+	}
+	public void SetName(String pname)
+	{
+		name = pname;
+	}
+	public void SetType(String ptype)
+	{
+		type = ptype;
+	}
+	public void SetValue(String pvalue)
+	{
+		value = pvalue;
+	}
+	public void Print()
+	{
+		System.out.print(value);
+	}
+}
