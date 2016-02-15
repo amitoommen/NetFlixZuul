@@ -1,0 +1,36 @@
+import java.util.*;
+import java.io.*;
+
+public class Table {
+	List<Record> listdefn;
+	List<Record> listRecords;
+	Table()
+	{
+		listRecords = new ArrayList<>();
+		listdefn = new ArrayList<>();
+	}
+	public void Add(Record precord)
+	{
+		listRecords.add(precord);
+	}
+	public void AddDefn(Record precord)
+	{
+		listdefn.add(precord);
+	}
+	public void Print()
+	{
+		for(int i=0; i<listRecords.size(); i++)
+		{
+			listRecords.get(i).Print();
+            System.out.println("");
+		}
+	}
+	public void PrintDefinition()
+	{
+		for(int i=0; i<listdefn.size(); i++)
+		{
+			listdefn.get(i).Print();
+            System.out.println("");
+		}
+	}
+};
